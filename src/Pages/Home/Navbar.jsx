@@ -38,12 +38,12 @@ export default function Navbar() {
       </div>
 
       <a
-        className={`nav-burger ${navActive ? "active" : ""}`}
+        className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
       >
-        <span className="nav-burger-line"></span>
-        <span className="nav-burger-line"></span>
-        <span className="nav-burger-line"></span>
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
       </a>
 
       <div className={`navbar-items ${navActive ? "active" : ""}`}>
