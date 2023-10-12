@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactMe() {
+  const form = useRef(); //{current: undefined}
+
   function handleSubmit(event) {
     event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_llyppp1",
+        "template_onq97j8",
+        form.current,
+        "c4F8shpbg4QeOBCU6",
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
   }
 
   return (
@@ -16,26 +35,19 @@ export default function ContactMe() {
         </p>
       </div>
 
-      <form className="contact-form-container" onSubmit={handleSubmit}>
+      <form
+        className="contact-form-container"
+        onSubmit={handleSubmit}
+        ref={form}
+      >
         <div className="container">
           <label htmlFor="first-name" className="contact-label">
-            <span className="text-md">First Name</span>
+            <span className="text-md">Name</span>
             <input
               type="text"
               className="contact-input text-md"
               name="first-name"
               id="first-name"
-              required
-            />
-          </label>
-
-          <label htmlFor="last-name" className="contact-label">
-            <span className="text-md">Last Name</span>
-            <input
-              type="text"
-              className="contact-input text-md"
-              name="last-name"
-              id="last-name"
               required
             />
           </label>
@@ -56,7 +68,8 @@ export default function ContactMe() {
           <span className="text-md">Message</span>
           <textarea
             className="contact-input text-md"
-            id="nessage"
+            name="message"
+            id="message"
             rows={8}
             placeholder="Send a message!"
           />
