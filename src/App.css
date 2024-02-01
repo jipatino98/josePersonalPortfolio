@@ -539,31 +539,31 @@ h3 {
     font-size: 68px;
     line-height: 70px;
   }
-  .skills-section-title {
+  .skills--section--title {
     font-size: 28px;
     line-height: 40px;
   }
 }
 
 @media only screen and (max-width: 1600px) {
-  .skills-section-heading {
+  .skills--section--heading {
     font-size: 54px;
     line-height: 70px;
   }
-  .skills-section-container {
+  .skills--section--container {
     gap: 16px;
   }
-  .skills-section-card {
+  .skills--section--card {
     gap: 28px;
   }
-  .skills-section-card-content {
+  .skills--section--card--content {
     gap: 20px;
   }
-  .skills-section-title {
+  .skills--section--title {
     font-size: 23px;
     line-height: 30px;
   }
-  .skills-section-description {
+  .skills--section--description {
     font-size: 17.333px;
     line-height: 27px;
   }
@@ -583,18 +583,18 @@ h3 {
   .footer-content {
     text-align: center;
   }
-  .skills-section-container,
+  .skills--section--container,
   .about-section,
   .portfolio-section-container,
   .portfolio-container-box,
-  .footer-link--container,
+  .footer-link-container,
   .footer-items > ul,
   .footer-content-container {
     display: flex;
     flex-direction: column;
   }
-  .skills-section,
-  .portfolio-container,
+  .skills--section,
+  .portfolio--container,
   .hero-section-content,
   .hero-section-content-box {
     align-items: center;
