@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 
 export default function ContactMe() {
   const form = useRef(); //{current: undefined}
+  const [emailSent, setEmailSent] = React.useState(false);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -17,6 +18,7 @@ export default function ContactMe() {
       .then(
         (result) => {
           console.log(result.text);
+          setEmailSent((prevEmailSent) => !prevEmailSent);
         },
         (error) => {
           console.log(error.text);
@@ -30,55 +32,61 @@ export default function ContactMe() {
         <p className="sub-title"></p>
         <h2>Contact Me</h2>
         <p className="text-lg">
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-          cillum sint consectetur cupidatat.
+          Feel free to shoot me an email if you would like to work together or
+          just to say hi!
         </p>
       </div>
 
-      <form
-        className="contact-form-container"
-        onSubmit={handleSubmit}
-        ref={form}
-      >
-        <div className="container">
-          <label htmlFor="first-name" className="contact-label">
-            <span className="text-md">Name</span>
-            <input
-              type="text"
+      {emailSent ? (
+        <p className="sub-title">Email Sent!</p>
+      ) : (
+        <form
+          className="contact-form-container"
+          onSubmit={handleSubmit}
+          ref={form}
+        >
+          <div className="container">
+            <label htmlFor="first-name" className="contact-label">
+              <span className="text-md">Name</span>
+              <input
+                type="text"
+                className="contact-input text-md"
+                name="first-name"
+                id="first-name"
+                required
+              />
+            </label>
+
+            <label htmlFor="email" className="contact-label">
+              <span className="text-md">Email</span>
+              <input
+                type="email"
+                className="contact-input text-md"
+                name="email"
+                id="email"
+                required
+              />
+            </label>
+          </div>
+
+          <label htmlFor="message" className="contact-label">
+            <span className="text-md">Message</span>
+            <textarea
               className="contact-input text-md"
-              name="first-name"
-              id="first-name"
-              required
+              name="message"
+              id="message"
+              rows={8}
+              placeholder="Send a message!"
             />
           </label>
 
-          <label htmlFor="email" className="contact-label">
-            <span className="text-md">Email</span>
-            <input
-              type="email"
-              className="contact-input text-md"
-              name="email"
-              id="email"
-              required
-            />
-          </label>
-        </div>
-
-        <label htmlFor="message" className="contact-label">
-          <span className="text-md">Message</span>
-          <textarea
-            className="contact-input text-md"
-            name="message"
-            id="message"
-            rows={8}
-            placeholder="Send a message!"
-          />
-        </label>
-
-        <div>
-          <button className="btn btn-primary contact-form-btn">Submit</button>
-        </div>
-      </form>
+          <div>
+            <button className="btn btn-primary contact-form-btn">
+              Send Message
+            </button>
+          </div>
+        </form>
+      )}
     </section>
   );
 }

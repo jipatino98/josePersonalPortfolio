@@ -90,6 +90,10 @@ p {
   background-color: var(--white);
 }
 
+.github-logo {
+  border-radius: 50%;
+}
+
 /* Global CSS ends here */
 
 /* Main Headings */

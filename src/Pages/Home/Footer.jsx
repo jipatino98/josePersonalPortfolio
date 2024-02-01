@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import React from "react";
+import githubLogo from "../../img/github-mark/github-mark.svg";
 
 function Footer() {
   return (
@@ -91,7 +92,18 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.twitter.com/"
+                href="https://github.com/jipatino98"
+                className="navbar-content"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={githubLogo} width="28" height="28" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://x.com/joe_panini?s=21&t=Of4dTSI1OFvOewGqFiQXCg"
                 className="navbar-content"
                 target="_blank"
                 rel="noreferrer"
@@ -112,7 +124,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/jose-patino-86715a192/"
                 className="navbar-content"
                 target="_blank"
                 rel="noreferrer"
