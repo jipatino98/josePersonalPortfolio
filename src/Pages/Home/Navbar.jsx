@@ -73,6 +73,21 @@ export default function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
+              to="mySkills"
+              className="navbar-content"
+            >
+              Experience
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar-active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               to="MyPortfolio"
               className="navbar-content"
             >
@@ -94,12 +109,6 @@ export default function Navbar() {
               About Me
             </Link>
           </li>
-
-          <li>
-            <a href={resumePDF} target="_blank" rel="noreferrer">
-              Resume
-            </a>
-          </li>
         </ul>
       </div>
 
@@ -110,8 +119,7 @@ export default function Navbar() {
         smooth={true}
         offset={-70}
         duration={500}
-        to={resumePDF}
-        target="_blank"
+        to="Contact"
         className="btn btn-outline-primary"
       >
         Contact Me
