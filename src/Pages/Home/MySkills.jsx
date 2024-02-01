@@ -9,7 +9,7 @@ export default function MySkills() {
         <h2 className="skills--section--heading">My Expertise</h2>
       </div>
 
-      <div className="skills--section--container">
+      <div className="skills-section-container">
         {data?.skills?.map((item, index) => (
           <div key={index} className="skills--section--card">
             <div className="skills--section--img">

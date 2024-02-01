@@ -3,9 +3,7 @@ import React from "react";
 export default function AboutMe() {
   return (
     <section id="AboutMe" className="about-section">
-      <div className="about-section-image">
-        <img src="./img/about-me.png" alt="About me" />
-      </div>
+      <div className="about-section-image"></div>
 
       <div className="hero-section-content-box about-section-box">
         <div className="hero-section-content">

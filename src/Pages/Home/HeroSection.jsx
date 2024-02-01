@@ -1,12 +1,12 @@
 import React from "react";
-import heroPhoto from "../../../public/img/joseBeach.jpg";
+import heroPhoto from "../../../src/img/joseBeach.jpg";
 
 export default function HeroSection() {
   return (
     <section id="heroSection" className="hero-section">
       <div className="hero-section-content-box">
         <div className="hero-section-content">
-          <p className="section-title">Hi! I'm Jose Patino</p>
+          <p className="section-title">Hi! I am Jose Patino</p>
           <h1 className="hero-section-title">
             <span className="hero-section-title-color">Frontend</span> <br />
             Developer

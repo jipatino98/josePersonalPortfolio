@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-scroll";
+import resumePDF from "../../data/resume.pdf";
 
 export default function Navbar() {
+  //Create a state to track whether navbar is visible or not
   const [navActive, setNavActive] = React.useState(false);
   const toggleNav = () => {
     setNavActive(!navActive);
@@ -25,6 +27,7 @@ export default function Navbar() {
     };
   }, []);
 
+  //If width of screnn < 1200, hide navbar elements
   React.useEffect(() => {
     if (window.innerWidth <= 1200) {
       closeMenu;
@@ -91,6 +94,12 @@ export default function Navbar() {
               About Me
             </Link>
           </li>
+
+          <li>
+            <a href={resumePDF} target="_blank" rel="noreferrer">
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -101,7 +110,8 @@ export default function Navbar() {
         smooth={true}
         offset={-70}
         duration={500}
-        to="Contact"
+        to={resumePDF}
+        target="_blank"
         className="btn btn-outline-primary"
       >
         Contact Me
