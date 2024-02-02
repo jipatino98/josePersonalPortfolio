@@ -1,26 +1,26 @@
 import React from "react";
+import redtail from "../../img/redtailoverlook.png";
 
 export default function AboutMe() {
   return (
     <section id="AboutMe" className="about-section">
-      <div className="about-section-image"></div>
+      <div className="about-section-image">
+        <img src={redtail} />
+      </div>
 
       <div className="hero-section-content-box about-section-box">
         <div className="hero-section-content">
           <p className="section-title">About</p>
           <h1 className="skills--section--heading">About Me</h1>
           <p className="hero-section-description">
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
-            voluptate dolor minim nulla est proident. Nostrud officia pariatur
-            ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-            reprehenderit commodo officia dolor Lorem duis laboris cupidatat
-            officia voluptate. Culpa proident adipisicing id nulla nisi laboris
-            ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo
-            ex non excepteur duis sunt velit enim. Voluptate laboris sint
-            cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            In my free time, I love to explore, hike and run the occasional 5k.
+            One of my favorite spots to hike is <b>Point Lobos</b> in Carmel,
+            CA.
+            <br></br>I am currently working on projects with a few teams that
+            aim to help local organization with their software needs. Check them
+            out in the <b>Experience</b> page! I enjoy working with other
+            developers and designers to get successful products out in timely
+            manner.
           </p>
         </div>
       </div>

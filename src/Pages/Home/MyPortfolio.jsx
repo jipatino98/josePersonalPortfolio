@@ -41,24 +41,44 @@ export default function MyPortfolio() {
                 <h3 className="portfolio-section-title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio-link">
-                {item.link}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none"
+              <div className="portfolio-link-banner-container">
+                <a
+                  className="text-sm portfolio-link"
+                  href={item.github}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <path
-                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                    stroke="currentColor"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </p>{" "}
+                  {item.link}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                      stroke="currentColor"
+                      stroke-width="2.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+
+                {item.inProgress ? (
+                  <p className="portfolio-banner">Work in Progress</p>
+                ) : (
+                  <a
+                    href={item.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="portfolio-banner-live"
+                  >
+                    Live Demo
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}

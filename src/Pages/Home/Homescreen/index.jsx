@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <MySkills />
-      <MyPortfolio />
       <AboutMe />
+      <MyPortfolio />
+      <MySkills />
       <ContactMe />
       <Footer />
     </>

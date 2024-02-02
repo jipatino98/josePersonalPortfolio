@@ -32,8 +32,8 @@ export default function ContactMe() {
         <p className="sub-title"></p>
         <h2>Contact Me</h2>
         <p className="text-lg">
-          Feel free to shoot me an email if you would like to work together or
-          just to say hi!
+          Feel free to send me an email if you would like to work together or
+          just to say hi! I'll get back to you ASAP!
         </p>
       </div>
 

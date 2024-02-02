@@ -2,50 +2,56 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/ucsc_blueprint_logo.jpeg",
+      "title": "UCSC Blueprint",
+      "description": "Creating an assessment tool aimed towards highschool students for the nonprofit, YFIOB. This tool allows students to find a career path that aligns with their interest and skills.",
+      "tools": ["React", "Express", "Firebase"]
     },
     {
       "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/somos_central_tech_association_logo.jpeg",
+      "title": "SOMOS",
+      "description": "I am collaborating with a team of local developers to create a website for SOMOS, an organization promoting technological and social awareness to the California Central Coast area.",
+      "tools": ["React", "Typescript", "Next.js", "Express", "Postgres"]
     },
     {
       "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-    },
-    {
-      "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/ucscstar.png",
+      "title": "UCSC Police Department",
+      "description": "Working with the UCSC PD to create a data analytic dashboard to monitor crime frequency and incidents. This will allow them to utilize resources in areas that are needed most.",
+      "tools": ["React", "Express", "Django", "Python"]
     }
   ],
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/yfiobwebsite.png",
+      "title": "YFIOB Assessment",
+      "description": "YFIOB is a nonprofit organization that strives to provide work-based learning oportunites to students. I collaborating with a team of developers to create an online assessment and dashboard to help students find career and learning oportunites in Santa Cruz county area.",
+      "link": "View In Github",
+      "github": "",
+      "inProgress": true,
+      "demo": ""
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/ucscdashboard.png",
+      "title": "UCSC PD Data Visualizer",
+      "description": "In a joint effort with other developers, I am partnering with UCSC PD to create a data visualization dashboard that will track trends, develop intervention strategies, and provide campus notifications. This will replace their current platform, which captured data on a crude map with limited search and visualization abilites.",
+      "link": "View In Github",
+      "github": "",
+      "inProgress": true,
+      "demo": ""
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/beatboxScreenshot.png",
+      "title": "Beatbox",
+      "description": "Imagine this: A melody pops up in your head so you quickly run to your computer and open up your digital audio workspace (DAW). By the time it loads up, 'Poof'... the melody is gone. Beatbox is a drum sequencer that allows users to create, record, and save music samples quickly. Users can then export the sample as a .wav file and import it into their primary DAW to use when they need it. Try it out!",
+      "link": "View In Github",
+      "github": "https://github.com/dakotalrubin/beatbox",
+      "inProgress": false,
+      "demo": "https://dakotalrubin.github.io/beatbox/"
     }
   ]
 }

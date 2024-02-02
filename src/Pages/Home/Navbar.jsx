@@ -73,10 +73,10 @@ export default function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="mySkills"
+              to="AboutMe"
               className="navbar-content"
             >
-              Experience
+              About Me
             </Link>
           </li>
 
@@ -91,7 +91,7 @@ export default function Navbar() {
               to="MyPortfolio"
               className="navbar-content"
             >
-              Portfolio
+              Projects
             </Link>
           </li>
 
@@ -103,10 +103,10 @@ export default function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="AboutMe"
+              to="mySkills"
               className="navbar-content"
             >
-              About Me
+              Experience
             </Link>
           </li>
         </ul>
