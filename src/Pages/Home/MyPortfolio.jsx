@@ -67,7 +67,7 @@ export default function MyPortfolio() {
                 </a>
 
                 {item.inProgress ? (
-                  <p className="portfolio-banner">Work in Progress</p>
+                  <p className="portfolio-banner">In Progress</p>
                 ) : (
                   <a
                     href={item.demo}
