@@ -18,11 +18,10 @@ export default function MySkills() {
   return (
     <section className="skills--section" id="mySkills">
       <div className="portfolio--container">
-        {/* <p className="section--title">My Skills</p> */}
+        <p className="section--title">Skill Set</p>
         <h2 className="skills--section--heading">Experience</h2>
       </div>
 
-      <p className="skills--section--title">Skill Set</p>
       <div className="skills--section--tools--container">
         {skillArray.map((item, index) => {
           return (

@@ -10,7 +10,7 @@ export default function AboutMe() {
 
       <div className="hero-section-content-box about-section-box">
         <div className="hero-section-content">
-          <p className="section-title">About</p>
+          <p className="section-title">What I do</p>
           <h1 className="skills--section--heading">About Me</h1>
           <p className="hero-section-description">
             In my free time, I love to explore, hike and run the occasional 5k.
