@@ -4,6 +4,8 @@ import data from "../../data/index.json";
 const skillArray = [
   "JavaScript",
   "C",
+  "Python",
+  "Flask/Django",
   "Git",
   "React",
   "Express",

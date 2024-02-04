@@ -4,15 +4,15 @@
       "id": "1",
       "src": "./img/ucsc_blueprint_logo.jpeg",
       "title": "UCSC Blueprint",
-      "description": "Creating an assessment tool aimed towards highschool students for the nonprofit, YFIOB. This tool allows students to find a career path that aligns with their interest and skills.",
+      "description": "As a senior developer, my responsibilities are to ensure a smooth onboarding experience for beginner web developers by leading React and Firebase workshops. I am also meeting with the project sponsor on a weekly basis to explore new ways to enhance the user experience and discuss how to broaden to scope of available resources from outside the county.",
       "tools": ["React", "Express", "Firebase"]
     },
     {
       "id": "2",
       "src": "./img/somos_central_tech_association_logo.jpeg",
       "title": "SOMOS",
-      "description": "I am collaborating with a team of local developers to create a website for SOMOS, an organization promoting technological and social awareness to the California Central Coast area.",
-      "tools": ["React", "Typescript", "Next.js", "Express", "Postgres"]
+      "description": "As a member, I am collaborating with a team of local developers to create a website for SOMOS, an organization committed to empowering aspiring tech individuals and fostering community growth in the Monterey County area. We hold weekly development meetings to ensure that the website is completed by the next networking event in April.",
+      "tools": ["React", "Typescript", "Nest.js", "Express", "Postgres"]
     },
     {
       "id": "3",
