@@ -14,7 +14,7 @@ export default function HeroSection() {
           </h1>
           <p className="hero-section-description">
             Experienced with frontend and backend frameworks. I also enjoy
-            leaning about distributed systems and operating systems. Check out
+            learning about distributed systems and operating systems. Check out
             my work!
           </p>
         </div>
