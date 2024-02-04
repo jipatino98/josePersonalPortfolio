@@ -13,7 +13,7 @@ export default function HeroSection() {
             Developer
           </h1>
           <p className="hero-section-description">
-            Experienced with frontend and backend frameworks. I also enjoy
+            I have experience with Frontend and Backend frameworks. I also enjoy
             learning about distributed systems and operating systems. Check out
             my work!
           </p>

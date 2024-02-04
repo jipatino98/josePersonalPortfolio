@@ -418,7 +418,8 @@ h3 {
 }
 
 .portfolio-section-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   justify-content: center;
   align-items: center;
   gap: 2.66rem;
@@ -710,7 +711,7 @@ h3 {
   .contact-section,
   .footer-container {
     gap: 20px;
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 70px;
   }
   .about-section {
