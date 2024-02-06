@@ -19,7 +19,7 @@
       "src": "./img/ucscstar.png",
       "title": "UCSC Police Department",
       "description": "Working with the UCSC PD to create a data analytic dashboard to monitor crime frequency and incidents. This will allow them to utilize resources in areas that are needed most.",
-      "tools": ["React", "Express", "Django", "Python"]
+      "tools": ["React", "Django", "Python", "Figma"]
     }
   ],
   "portfolio": [
