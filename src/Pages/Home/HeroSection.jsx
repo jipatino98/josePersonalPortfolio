@@ -1,6 +1,6 @@
 import React from "react";
 import heroPhoto from "../../../src/img/heroImage.png";
-import resumePDF from "../../data/resume.pdf";
+import resumePDF from "../../data/josepatino-resume.pdf";
 
 export default function HeroSection() {
   return (

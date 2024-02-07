@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-scroll";
-import resumePDF from "../../data/resume.pdf";
 
 export default function Navbar() {
   //Create a state to track whether navbar is visible or not
